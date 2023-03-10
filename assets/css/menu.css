@@ -1,0 +1,37 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+.menu__title{
+    padding-left: 20px;
+    color: white;
+}
+.menu__header{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.menu__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+.menu__list__item a{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+@media (max-width: 1260px) {
+    .displaynone{
+        display: none;
+    }
+    }
+    @media (max-width: 770px) {
+        .menu__title{
+            padding-left: 0px;
+        }
+    }

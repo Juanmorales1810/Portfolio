@@ -1,0 +1,160 @@
+.formcontato__contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+}
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+}
+.formcontato__title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: white;
+    text-shadow:0px 0px 15px cyan;
+}
+.formcontato__subtext{
+    font-weight: 400;
+    font-size: 22px;
+    color: white;
+}
+.inputbox {
+    display: flex;
+    position: relative;
+    /* width: 550px; */
+    padding: 20px;
+}
+
+.inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.inputbox label {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: white;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.inputbox input:valid ~label,
+.inputbox input:focus ~label {
+    color: #45f3ff;
+    transform: translateX(-10px) translateY(-34px);
+    font-size: 0,75em;
+}
+.inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}  
+.inputbox input:valid ~i,
+.inputbox input:focus ~i {
+    height: 44px;
+}
+.formcontato__botao {
+    align-items: center;
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in; 
+}
+.formcontato__botao:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.formcontato__botao:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+.formcontato__botao::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+.formcontato__botao:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+@media (max-width: 1160px) {
+    .formcontato__contacto{
+        flex-direction: column-reverse;
+    }
+    .formcontato--esquerda lottie-player{
+        width: auto;
+        height: auto;
+    }
+}
+@media (max-width: 770px) {
+    .formcontato--esquerda{
+        display: none;
+    }
+}

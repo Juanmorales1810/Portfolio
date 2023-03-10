@@ -1,0 +1,56 @@
+.tres__estrellas{
+    width: 30px;
+    height: 30px;
+}
+.title__profile{
+    width: 368px;
+    border-radius: 33%;
+}
+.img__network__item{
+    width: 50px;
+}
+.skills__img--img{
+    width: 120px;
+    padding-bottom: 50px;
+    padding-top:50px ;
+}
+.hobbies__img--img{
+    width: 120px;
+    padding-bottom: 50px;
+    padding-top:50px ;
+}
+.academic__courses__item__img--img{
+    height: 160px;
+}
+.experience__img{
+    width: 600px;
+}
+@media (max-width: 1160px) {
+    .title__profile{
+        width: 300px;
+    }
+    .img__network__item{
+        width: 40px;
+    }
+}
+@media (max-width: 770px) {
+    .experience__img{
+        /* display: none; */
+        max-width: 100%;
+        height: auto;
+    }
+    .img__network__item{
+        width: 20px;
+    }
+    .skills__img--img{
+        grid-area: 1 / 1 / 3 / 2;
+        width: 60px;
+        padding-bottom: 0px;
+        padding-top:0px ;
+    }
+    .hobbies__img--img{
+        width: 60px;
+        padding-bottom: 0px;
+        padding-top:0px ;
+    }
+}

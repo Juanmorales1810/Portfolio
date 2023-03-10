@@ -1,0 +1,53 @@
+.academic__title{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: white;
+    text-shadow:0px 0px 15px cyan;
+}
+.academic__courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.academic__courses__box{
+    display: flex;
+    justify-content: center;
+    background: white;
+    padding: 10px;
+    width: 450px;
+    height: 380px;
+    border-radius: 7%;
+}
+.academic__courses__list{
+    display: flex;
+    padding: 0;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+.academic__courses__item__title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    color: black;
+}
+.academic__courses__item__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hobbies__name{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    text-shadow:0px 0px 15px cyan;
+    color: white;
+}
+.academic__courses__item__subtitle{
+    font-size: 20px;
+}

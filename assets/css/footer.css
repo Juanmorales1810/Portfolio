@@ -1,0 +1,21 @@
+.footer{
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: center;
+}
+.footer__rodape{
+    text-align: center;
+}
+.footer__title{
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    text-shadow:0px 0px 15px cyan;
+}
+.footer__year{
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    text-shadow:0px 0px 15px cyan;
+}

@@ -1,0 +1,16 @@
+.todo{
+padding-right: 10%;
+padding-left: 10%;
+}
+@media (max-width: 1160px) {
+    .todo{
+        padding-right: 5%;
+        padding-left: 5%;
+        }
+}
+@media (max-width: 770px) {
+    .todo{
+        padding-right: 3%;
+        padding-left: 3%;
+        }
+}
